@@ -6,22 +6,8 @@ from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 
 stock_symbol = "MSFT"
-start_date = "2023-05-01"
-end_date = "2023-05-20"
-
-# Get the historical data for the stock
-stock_history = yf.Ticker(stock_symbol).history(start=start_date, end=end_date)
-
-# Get the close prices for the specified date range
-close_prices = stock_history["Close"]
-
-
-
-#This code works
-#Can tell you whether a the closing price for a stock was lower or higher in comparison to the previous closing price
-stock_symbol = "MSFT"
-start_date = "2023-05-01"
-end_date = "2023-05-20"
+start_date = "2020-01-01"
+end_date = "2024-01-01"
 
 # Get the historical data for the stock
 stock_history = yf.Ticker(stock_symbol).history(start=start_date, end=end_date)
